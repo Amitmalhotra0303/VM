@@ -16,12 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from vendingmachine.views import item_list
 from vendingmachine.views import items_detail
-urlpatterns = [
-
-CopyCopy
-path('', home_page, name = 'home_page'),
-path('admin/', admin.site.urls),
-]
 from django.urls import path
 from vendingmachine import views 
 from rest_framework.urlpatterns import format_suffix_patterns
