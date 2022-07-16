@@ -14,13 +14,21 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from vendingmachine.views import item_list
+from vendingmachine.views import items_detail
+urlpatterns = [
+
+CopyCopy
+path('', home_page, name = 'home_page'),
+path('admin/', admin.site.urls),
+]
 from django.urls import path
 from vendingmachine import views 
 from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('vendingmachine/', views.item_list),
-    path('vendingmachine/<int:id>', views.items_detail)
+    path('', item_list, views.item_list),
+    path('/<int:id>', items_detail, views.items_detail)
 ]
 urlpatterns = format_suffix_patterns(urlpatterns)
