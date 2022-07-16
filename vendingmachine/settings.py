@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import corsheaders
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Static files (CSS, JavaScript, Images)
@@ -140,7 +141,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'my-vending-machine-heroku-22.herokuapp.com'
+    'my-vending-machine-heroku-22.herokuapp/vendingmachine.com'
 ]
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
