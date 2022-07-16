@@ -65,6 +65,7 @@ TEMPLATES = [
 ]
 
 INSTALLED_APPS = [
+    'corsheaders',
     'rest_framework',
     'vendingmachine',
     'django.contrib.admin',
@@ -76,6 +77,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -136,7 +139,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+CORS_ALLOWED_ORIGINS = [
+    'my-vending-machine-heroku-22.herokuapp.com'
+]
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
