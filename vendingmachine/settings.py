@@ -141,8 +141,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'my-vending-machine-heroku-22.herokuapp.com'
+    'https://localhost:3000',
+    'https://my-vending-machine-heroku-22.herokuapp.com'
 ]
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
