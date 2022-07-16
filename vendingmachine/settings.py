@@ -44,7 +44,7 @@ SECRET_KEY = 'django-insecure-swpq49(s9_v-)8h*82!t&c)nbkr3#vbryc+zinj3e=rkn9i%%=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["my-vending-machine-heroku-22.herokuapp.com"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
