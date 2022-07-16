@@ -10,9 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+from email import header
 from pathlib import Path
 import os
-import corsheaders
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Static files (CSS, JavaScript, Images)
@@ -141,7 +141,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'my-vending-machine-heroku-22.herokuapp/vendingmachine.com'
+    'http://localhost:3000',
+    'my-vending-machine-heroku-22.herokuapp.com'
 ]
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
