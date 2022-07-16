@@ -45,7 +45,7 @@ SECRET_KEY = 'django-insecure-swpq49(s9_v-)8h*82!t&c)nbkr3#vbryc+zinj3e=rkn9i%%=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["my-vending-machine-heroku-22.herokuapp.com"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -139,11 +139,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+CORS_ORIGIN_ALLOW_ALL=True
 
-CORS_ALLOWED_ORIGINS = [
-    'https://localhost:3000',
-    'https://my-vending-machine-heroku-22.herokuapp.com'
-]
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
